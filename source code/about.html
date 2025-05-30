@@ -1,0 +1,99 @@
+{% extends 'velora/base.html' %}
+{% load static %}
+{% block title %}About Us{% endblock %}
+
+{% block content %}
+<!-- About Hero -->
+<section class="hero-section d-flex align-items-center text-white" style="background-image: linear-gradient(rgba(0,0,0,0.5), url('https://source.unsplash.com/random/1920x600/?team'))cd">
+    <div class="container text-center">
+        <h1 class="display-1 fw-bold">About Velora Travels</h1>
+        <p class="lead fs-3">Your journey begins with us</p>
+    </div>
+</section>
+
+<!-- Our Story -->
+<section class="py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h2 class="mb-4">Our Story</h2>
+                <p>Founded in 2010, Velora Travels began as a small team of passionate travelers with a simple mission: to create extraordinary travel experiences that go beyond the ordinary.</p>
+                <p>What started as a boutique travel agency has now grown into a trusted name in the industry, serving thousands of satisfied travelers across the globe. Our commitment to personalized service and attention to detail remains at the heart of everything we do.</p>
+                <p>We believe travel has the power to transform lives, broaden perspectives, and create connections that transcend borders. This belief drives us to craft journeys that are not just vacations, but life-changing experiences.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="{% static 'velora/images/logo.jpg' %}" alt="Our Office" class="img-fluid rounded shadow">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Our Team -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">Meet Our Team</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <img src="{% static 'velora/images/Basanti.jpg' %}" class="card-img-top" alt="Team Member">
+                    <div class="card-body">
+                        <h5 class="card-title">Basanti kumari</h5>
+                        <p class="card-text">Founder & CEO</p>
+                        <p>With 20+ years in the travel industry, Sarah's passion for exploration is infectious.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <img src="{% static 'velora/images/Lalsha.jpg' %}" class="card-img-top" alt="Team Member">
+                    <div class="card-body">
+                        <h5 class="card-title">Lalsha</h5>
+                        <p class="card-text">Travel Director</p>
+                        <p>Michael has personally visited over 70 countries and specializes in adventure travel.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <img src="{% static 'velora/images/priya.jpg' %}" class="card-img-top" alt="Team Member">
+                    <div class="card-body">
+                        <h5 class="card-title">Priya Sharma</h5>
+                        <p class="card-text">Customer Experience</p>
+                        <p>Priya ensures every client receives personalized attention and seamless service.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Our Values -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Our Core Values</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="p-4 text-center">
+                    <i class="fas fa-globe-americas fa-3x text-primary mb-3"></i>
+                    <h4>Sustainable Travel</h4>
+                    <p>We're committed to responsible tourism that benefits local communities and preserves natural environments.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-4 text-center">
+                    <i class="fas fa-heart fa-3x text-primary mb-3"></i>
+                    <h4>Personalized Service</h4>
+                    <p>Every journey is tailored to your unique interests, preferences, and travel style.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-4 text-center">
+                    <i class="fas fa-lightbulb fa-3x text-primary mb-3"></i>
+                    <h4>Innovative Experiences</h4>
+                    <p>We constantly seek new ways to create memorable and unique travel moments.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

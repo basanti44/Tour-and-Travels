@@ -1,0 +1,83 @@
+{% extends 'velora/base.html' %}
+{% load static %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section d-flex align-items-center text-white">
+    <div class="container text-center">
+        <h1 class="display-1 fw-bold">Discover Your Next Adventure</h1>
+        <p class="lead fs-3">Experience the world with our expertly crafted travel packages</p>
+        <a href="{% url 'velora:destinations' %}" class="btn btn-primary btn-lg mt-3">Explore Destinations</a>
+    </div>
+</section>
+
+<!-- Featured Destinations -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Featured Destinations</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card destination-card h-100">
+                    <img src="{% static 'velora/images/Bali.jpg' %}" class="card-img-top" alt="Bali">
+                    <div class="card-body">
+                        <h5 class="card-title">Bali, Indonesia</h5>
+                        <p class="card-text">Experience tropical paradise with pristine beaches and vibrant culture.</p>
+                        <a href="#" class="btn btn-outline-primary">View Package</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card destination-card h-100">
+                    <img src="{% static 'velora/images/Santorni.jpg' %}" class="card-img-top" alt="Santorini">
+                    <div class="card-body">
+                        <h5 class="card-title">Santorini, Greece</h5>
+                        <p class="card-text">White-washed buildings against the stunning backdrop of the Aegean Sea.</p>
+                        <a href="#" class="btn btn-outline-primary">View Package</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card destination-card h-100">
+                    <img src="{% static 'velora/images/kyoto.jpg' %}" class="card-img-top" alt="Kyoto">
+                    <div class="card-body">
+                        <h5 class="card-title">Kyoto, Japan</h5>
+                        <p class="card-text">Ancient temples, traditional gardens, and the beauty of cherry blossoms.</p>
+                        <a href="#" class="btn btn-outline-primary">View Package</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Why Choose Us -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">Why Choose Velora Travels?</h2>
+        <div class="row g-4 text-center">
+            <div class="col-md-4">
+                <div class="p-4">
+                    <i class="fas fa-shield-alt fa-3x text-primary mb-3"></i>
+                    <h4>Trusted Experience</h4>
+                    <p>Over 13 years of creating unforgettable travel experiences for our clients.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-4">
+                    <i class="fas fa-hand-holding-usd fa-3x text-primary mb-3"></i>
+                    <h4>Best Price Guarantee</h4>
+                    <p>We offer competitive prices with no hidden fees.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-4">
+                    <i class="fas fa-headset fa-3x text-primary mb-3"></i>
+                    <h4>24/7 Support</h4>
+                    <p>Our travel experts are available anytime to assist you.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

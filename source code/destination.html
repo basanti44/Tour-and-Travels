@@ -1,0 +1,187 @@
+{% extends 'velora/base.html' %}
+{% load static %}
+{% block title %}Destinations{% endblock %}
+
+{% block content %}
+<!-- Destinations Hero -->
+<section class="hero-section d-flex align-items-center text-white" style="background-image: linear-gradient(rgba(0,0,0,0.5), url('https://source.unsplash.com/random/1920x600/?world'))">
+    <div class="container text-center">
+        <h1 class="display-1 fw-bold">Explore Destinations</h1>
+        <p class="lead fs-3">Discover our handpicked travel experiences</p>
+    </div>
+</section>
+
+<!-- Destinations Filter -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mb-3 mb-md-0">
+                <input type="text" class="form-control form-control-lg" placeholder="Search destinations...">
+            </div>
+            <div class="col-md-3 mb-3 mb-md-0">
+                <select class="form-select form-select-lg">
+                    <option selected>All Regions</option>
+                    <option>Asia</option>
+                    <option>Europe</option>
+                    <option>Africa</option>
+                    <option>North America</option>
+                    <option>South America</option>
+                    <option>Oceania</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <select class="form-select form-select-lg">
+                    <option selected>Travel Style</option>
+                    <option>Beach & Relaxation</option>
+                    <option>Adventure & Sports</option>
+                    <option>Cultural & Historical</option>
+                    <option>Food & Culinary</option>
+                    <option>Luxury & Retreat</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Destinations List -->
+<section class="py-5">
+    <div class="container">
+        <div class="row g-4">
+            <!-- Destination 1 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card destination-card h-100">
+                    <img src="{% static 'velora/images/paris.jpg' %}" class="card-img-top" alt="Paris">
+                    <div class="card-body">
+                        <h5 class="card-title">Paris, France</h5>
+                        <p class="card-text">The City of Light awaits with its iconic landmarks, exquisite cuisine, and romantic ambiance.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-primary">Cultural</span>
+                            <span class="text-success fw-bold">From $1,299</span>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-white">
+                        <a href="#" class="btn btn-primary w-100">View Details</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Destination 2 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card destination-card h-100">
+                    <img src="{% static 'velora/images/Serengeti.jpg' %}" class="card-img-top" alt="Safari">
+                    <div class="card-body">
+                        <h5 class="card-title">Serengeti, Tanzania</h5>
+                        <p class="card-text">Witness the great migration and experience Africa's breathtaking wildlife.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-success">Adventure</span>
+                            <span class="text-success fw-bold">From $2,499</span>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-white">
+                        <a href="#" class="btn btn-primary w-100">View Details</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Destination 3 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card destination-card h-100">
+                    <img src="{% static 'velora/images/Bora Bora.jpg' %}" class="card-img-top" alt="Bora Bora">
+                    <div class="card-body">
+                        <h5 class="card-title">Bora Bora, French Polynesia</h5>
+                        <p class="card-text">Overwater bungalows and crystal-clear waters in a tropical paradise.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-info">Luxury</span>
+                            <span class="text-success fw-bold">From $3,799</span>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-white">
+                        <a href="#" class="btn btn-primary w-100">View Details</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Destination 4 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card destination-card h-100">
+                    <img src="{% static 'velora/images/kyoto.jpg' %}" class="card-img-top" alt="Kyoto">
+                    <div class="card-body">
+                        <h5 class="card-title">Kyoto, Japan</h5>
+                        <p class="card-text">Ancient temples, traditional tea houses, and stunning cherry blossoms.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-warning">Historical</span>
+                            <span class="text-success fw-bold">From $2,199</span>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-white">
+                        <a href="#" class="btn btn-primary w-100">View Details</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Destination 5 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card destination-card h-100">
+                    <img src="{% static 'velora/images/Riodejaneiro.jpg' %}" class="card-img-top" alt="Rio">
+                    <div class="card-body">
+                        <h5 class="card-title">Rio de Janeiro, Brazil</h5>
+                        <p class="card-text">Vibrant culture, stunning beaches, and the iconic Christ the Redeemer.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-danger">Beach</span>
+                            <span class="text-success fw-bold">From $1,899</span>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-white">
+                        <a href="#" class="btn btn-primary w-100">View Details</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Destination 6 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card destination-card h-100">
+                    <img src="{% static 'velora/images/Queenstown.jpg' %}" class="card-img-top" alt="New Zealand">
+                    <div class="card-body">
+                        <h5 class="card-title">Queenstown, New Zealand</h5>
+                        <p class="card-text">Adventure capital of the world with breathtaking landscapes.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-success">Adventure</span>
+                            <span class="text-success fw-bold">From $2,599</span>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-white">
+                        <a href="#" class="btn btn-primary w-100">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Pagination -->
+        <nav class="mt-5">
+            <ul class="pagination justify-content-center">
+                <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+        </nav>
+    </div>
+</section>
+
+<!-- Newsletter -->
+<section class="py-5 bg-primary text-white">
+    <div class="container text-center">
+        <h2 class="mb-4">Get Travel Inspiration</h2>
+        <p class="lead mb-4">Subscribe to our newsletter for exclusive deals and travel tips</p>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="input-group">
+                    <input type="email" class="form-control form-control-lg" placeholder="Your email address">
+                    <button class="btn btn-dark btn-lg" type="button">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
